@@ -1,5 +1,8 @@
 const binaryArrayToNumber = arr => {
-    // your code
+    // join array and make string;
+    let myNum = arr.join('').toString(2)
+    // take the binary num and make decimal
+    return parseInt(myNum, 2)
 };
 
 console.log(binaryArrayToNumber([0, 0, 0, 1])); // 1
